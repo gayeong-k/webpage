@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://kit.fontawesome.com/89f5911dc7.js" crossorigin="anonymous"></script></head>
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <script src="js/content.js"></script>
+    <body style="background-color:rgb(250,250,250);">
+        <div id="popup_layer">
+        <i id="btn_x" class="fa-solid fa-x" onClick="hidepopup();" ></i>
+            <div id="popup_box">
+                <div id="title">새 게시물 만들기</div>
+                <div id="first_step">
+                <img src="image/photo.png" style="width:120px; height:100px; margin-top: 150px;">
+                <p style="font-size: 26px; color:rgb(115,115,115);margin-top:4px;" >사진과 동영상을 여기에 끌어다 놓으세요</p>
+                <input type="file" id="realupload" accept="image/*" style="display: none;"required multiple>
+                <label for ="realupload" id="addimg" >컴퓨터에서 선택</label>
+                </div> 
+                <div id="second_step">
+                    <img src="" class="img_uploaded">
+                </div>
+            </div>
+        </div>
+    <div id="main_outer">
+    <div id="banner_out">
+    <div id="main_inner">
+   <div id="banner">
+        <img id="img" src="image/insta_logo.png">
+        <div class="search_bar">
+        <i style="margin-left:13px; margin-top:20px; color:rgb(184,184,184); " class="fa-solid fa-magnifying-glass fa-lg"></i>
+        <input type="text" id="search" placeholder="검색" ></input>
+        </div>
+        <div id="btn" style="display:none" >
+        <button id="login" >로그인</button>
+        <button id="join" >가입하기</button>
+        </div>
+        <div id="btn_2">
+            <i id="icon_pf" class="fa-solid fa-house"></i>
+            <i id="icon_pf" class="fa-regular fa-message"></i>
+            <i id="icon_pf" class="fa-solid fa-plus" onClick="showpopup();"></i>
+            <i id="icon_pf" class="fa-regular fa-compass"></i>
+            <i id="icon_pf" class="fa-regular fa-heart"></i>
+        </div>
+        </div>
+
+    <div id="content">
+        <div id="profile">
+            <div id="profile_img">
+                <img id="img_prof" src="image/profile.jpg" >
+            </div >
+            <div id="text_prof" style="height:225px;float:left; font-size: 29px; font-weight: 200;">
+                <div style=" margin-top: 34px;">
+                    hiyeong_p
+                    <button id="btn_follow" >팔로우</button>
+                </div>
+                <div style="font-size: 16px; margin-top: 20px;">
+                    <div style="float:left">게시물 <span style="font-weight: bold;">170</span></div><div style="float:left; margin-left:38px;">팔로워 <span style="font-weight: bold;">777</span></div><div style="float:left; margin-left:38px;">팔로우 <span style="font-weight: bold;">678</span></div>
+                </div>
+                <br>
+                <div style="font-size: 16px; margin-top: 10px; ">
+                    <span style="font-weight: bold;">가영</span>
+                    <br><br>
+                    <span style="font-style: italic;">inha_univ 19 &nbsp <i class="fa-solid fa-graduation-cap"></i>  </span>
+                    <P><span >hobby <i class="fa-solid fa-heart"></i>  game, skate board</span>
+                    </P>
+                </div>
+            </div>  
+            
+        </div>
+        <!-- <div id="highlight">
+            <div id="div_hgt"><img id="img_hgt" src="image/hilight1.jpg"> <div >hbd</div> </div>
+            <div id="div_hgt"><img id="img_hgt" src="image/hilight2.jpg"><div >travel</div> </div>
+            <div id="div_hgt"><img id="img_hgt" src="image/hilight3.jpg"> <div >date</div</div>
+        </div> -->
+        <div class="select_bar">
+            <span id="select_box1" onClick="showColor(this.id);">
+                <i id="select_icon" class="fa-solid fa-table-cells"> 게시물</i>
+            </span>
+            <span id="select_box2" onClick="showColor(this.id);">
+                <i id="select_icon" class="fa-regular fa-circle-play"> 동영상</i> 
+            </span>
+            <span  id="select_box3" onClick="showColor(this.id);">
+                <i id="select_icon" class="fa-solid fa-user-tag"> 태그됨</i>
+            </span>
+        </div>
+        <div style=" height: 900px;">
+            <div id="pid"><img id="img_pid" src="image/hilight1.jpg"></div>
+            <div id="pid"><img id="img_pid" src="image/hilight2.jpg"></div>
+            <div id="pid"><img id="img_pid" src="image/hilight3.jpg"></div>
+        </div>
+    </div> 
+    </div>
+    </div>
+    </div>
+
+</div>
+
+</html>
